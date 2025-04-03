@@ -54,8 +54,8 @@ def calculate_psnr(i1: np.ndarray, i2: np.ndarray) -> float:
 
     return psnr
 
-# SSIM é uma métrica perceptual que quantifica a degradação da qualidade da imagem
-# causada por processamento, como compressão de dados ou perdas na transmissão de dados
+# SSIM é uma métrica que considera a percepção humana da imagem na comparação de similaridade.
+# Ela considera mudanças de luminância, contraste e estrutura entre duas imagens.
 def calculate_ssim(i1: np.ndarray, i2: np.ndarray) -> float:
     mu1 = np.mean(i1)
     mu2 = np.mean(i2)
